@@ -7,7 +7,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 
-import javax.validation.ValidationException;
+import jakarta.validation.ValidationException;
 import java.util.Optional;
 
 @RestController

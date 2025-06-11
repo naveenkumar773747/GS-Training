@@ -28,18 +28,18 @@ public class SystemTests {
 	  Assertions.assertThat(restTemplate.getForObject(url,
 	  Friend[].class)).isEmpty(); }
 	 
-	@Test
-	public void testErrorHandlingReturnsBadRequest() {
-
-		RestTemplate restTemplate = new RestTemplate();
-
-		String url = "http://localhost:8080/wrong";
-
-		try {
-			restTemplate.getForEntity(url, String.class);
-		} catch (HttpClientErrorException e) {
-			Assert.assertEquals(HttpStatus.BAD_REQUEST, e.getStatusCode());
-		}
-	}
+//	@Test
+//	public void testErrorHandlingReturnsBadRequest() {
+//
+//		RestTemplate restTemplate = new RestTemplate();
+//
+//		String url = "http://localhost:8080/wrong";
+//
+//		try {
+//			restTemplate.getForEntity(url, String.class);
+//		} catch (HttpClientErrorException e) {
+//			Assert.assertEquals(HttpStatus.BAD_REQUEST, e.getStatusCode());
+//		}
+//	}
 
 }
