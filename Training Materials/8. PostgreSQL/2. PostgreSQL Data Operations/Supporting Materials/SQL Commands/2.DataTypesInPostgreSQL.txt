@@ -45,7 +45,7 @@ SELECT '11 hours, 30 minutes, 40 seconds ago'::INTERVAL  AS "11 and a half hours
 
 -- Array
 -- ===================
-select '{ "Certification practice exams", "Interactive courses", "Technical Projects" }'::VARCHAR[] as "ACME Learning Premium Package";
+SELECT '{ "Certification practice exams", "Interactive courses", "Technical Projects" }'::VARCHAR[] as "ACME Learning Premium Package";
 SELECT ARRAY[55,66,77]::INTEGER[] AS "Integer Array";
 SELECT (ARRAY[55,66,77]::INTEGER[])[1] AS "First Array Element";
 
