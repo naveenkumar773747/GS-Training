@@ -113,7 +113,9 @@ cd  kafka_2.13-3.0.0
 
 bin/kafka-topics.sh --bootstrap-server localhost:9092 --list my_topic 
 
-bin/kafka-console-producer.sh --broker-list localhost:9092 --topic my_topic
+bin/kafka-console-producer.sh --broker-list localhost:9092 --topic my_topic -- Deprecated
+
+bin/kafka-console-producer.sh --bootstrap-server localhost:9092 --topic my_topic
 
 >MyMessage 1
 >MyMessage 2
