@@ -1,0 +1,10 @@
+Producer:
+==========
+
+Header:
+ __TypeId__:"com.acme.notificationservice.model.NotificationCreatedEvent"
+
+==========
+Consumer:
+==========
+spring.json.value.default.type -->hardcode this value
