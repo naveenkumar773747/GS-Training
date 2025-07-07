@@ -14,9 +14,9 @@ bin/kafka-server-start.sh config/server.properties
 
 WSL2 IP:
 =========
-# ip addr | grep eth0 - just for reference
 ip addr | grep inet
 ==> 172.26.250.220
+==> This is the advertised listener. Changes on every restart.
 
 Stop Kafka Server
 =====================
@@ -28,9 +28,12 @@ Stop Kafka Zookeeper
 pkill -f zookeeper
 
 Check if IPv6 is enabled or disabled, from a terminal window: 
+Do this on restart:-
 ===========================================================
 
 $ cat /proc/sys/net/ipv6/conf/all/disable_ipv6 
+
+-- should return 1
 
 List Topics 
 =============
