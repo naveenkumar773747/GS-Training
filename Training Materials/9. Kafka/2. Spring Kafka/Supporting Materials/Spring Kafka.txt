@@ -39,7 +39,7 @@ net.ipv6.conf.all.disable_ipv6=1
 List Topics 
 =============
 
- bin/kafka-topics.sh --list --bootstrap-server 172.26.246.253:9092
+bin/kafka-topics.sh --list --bootstrap-server 172.26.248.184:9092
                                              <-advertised listener - same as in config/server.properties -->
 
 Delete Topic
@@ -49,7 +49,7 @@ bin/kafka-topics.sh --delete --topic notifications --bootstrap-server  172.26.24
 
 Display messages in topic
 ======================
-bin/kafka-console-consumer.sh --bootstrap-server 172.26.250.220:9092 --topic notifications --from-beginning
+bin/kafka-console-consumer.sh --bootstrap-server 172.26.248.184:9092 --topic notifications --from-beginning
 
 
  netstat -an | grep 9092
