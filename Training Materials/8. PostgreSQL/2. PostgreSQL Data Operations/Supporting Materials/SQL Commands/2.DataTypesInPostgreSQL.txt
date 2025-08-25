@@ -1,3 +1,5 @@
+ \! cls
+==============
 -- Character
 -- =============
 SELECT 'Art'::CHAR(7) AS "Padded";
